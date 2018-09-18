@@ -1,7 +1,7 @@
 import java.util.Scanner;
 class Data {
     Data() {}
-    private double average;
+    private double avg;
     private double Max;
     private int cnt;
 
@@ -10,16 +10,19 @@ class Data {
             Max = m;
         }
     }
+    
     public double maxData(){
         return Max;
     }
+    
     public void counter(double m){
         cnt++;
-        average+=m;
+        avg+=m;
     }
+    
     public double averageData(){
-        average=average/cnt;
-        return average;
+        avg=avg/cnt;
+        return avg;
     }
 }
 
